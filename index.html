@@ -43,20 +43,20 @@
   <script src="./script.min.js"></script>
   <script src="script.js"></script>
   <script>
-    // function musicPlay(isPlay) {
-    //   var media = document.querySelector('#audioDom');
-    //   if (isPlay && media.paused) {
-    //     media.play();
-    //   }
-    //   if (!isPlay && !media.paused) {
-    //     media.pause();
-    //   }
-    // }
-    // function musicInBrowserHandler() {
-    //   setTimeout(function () {
-    //     musicPlay(true)
-    //   }, 0)
-    // }
+    function musicPlay(isPlay) {
+      var media = document.querySelector('#audioDom');
+      if (isPlay && media.paused) {
+        media.play();
+      }
+      if (!isPlay && !media.paused) {
+        media.pause();
+      }
+    }
+    function musicInBrowserHandler() {
+      setTimeout(function () {
+        musicPlay(true)
+      }, 0)
+    }
     // document.body.addEventListener('onload', musicInBrowserHandler);
     // document.body.addEventListener('click', musicInBrowserHandler);
     // document.body.addEventListener('WeixinJSBridgeReady', musicInBrowserHandler);
