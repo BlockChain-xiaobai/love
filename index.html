@@ -36,7 +36,7 @@
 
 <body>
  
-  <audio id="audioDom" src="https://github.com/BlockChain-xiaobai/love/blob/main/irenenber.mp3" loop="loop" autoplay="autoplay" preload="auto" contronls>I Love you</audio>
+  <audio id="audioDom" src="https://github.com/BlockChain-xiaobai/love/blob/main/irenenber.mp3" loop="loop" preload="auto" autoplay="autoplay">I Love you</audio>
   <div class="type_words" id="contents"></div>
   <script src="three.min.js"></script>
   <script src="./script.min.js"></script>
@@ -56,7 +56,7 @@
         musicPlay(true)
       }, 0)
     }
-    document.body.addEventListener('onload', musicInBrowserHandler);
+    document.body.addEventListener('touchstart', musicInBrowserHandler);
     document.body.addEventListener('click', musicInBrowserHandler);
     document.body.addEventListener('WeixinJSBridgeReady', musicInBrowserHandler);
     document.body.addEventListener('YixinJSBridgeReady', musicInBrowserHandler);
